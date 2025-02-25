@@ -28,7 +28,7 @@ export default function SeacrhBox() {
         />
         <br />
         <br />
-        <Button variant="contained" startIcon={<SearchIcon />}>Search</Button>
+        <Button variant="contained" startIcon={<SearchIcon />}>Search for weather</Button>
       </form>
     </>
   );
