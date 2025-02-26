@@ -1,9 +1,9 @@
 import "./App.css";
-import SeacrhBox from "./Searchbox";
+import SearchBox from "./Searchbox";
 
 function App() {
   return <>
-  <SeacrhBox/>
+  <SearchBox/>
   </>;
 }
 
