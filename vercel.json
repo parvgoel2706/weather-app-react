@@ -1,8 +1,0 @@
-{
-    "functions": {
-      "api/weather.js": {
-        "runtime": "nodejs18.x"
-      }
-    }
-  }
-  
