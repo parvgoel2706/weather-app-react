@@ -1,7 +1,14 @@
 {
     "version": 2,
+    "functions": {
+      "src/server/*.js": {
+        "runtime": "nodejs18.x"
+      }
+    },
     "routes": [
-      { "src": "/api/weather", "dest": "/api/weather.js" }
+      {
+        "src": "/api/(.*)",
+        "dest": "/src/server/$1.js"
+      }
     ]
   }
-  

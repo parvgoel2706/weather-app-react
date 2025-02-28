@@ -19,11 +19,8 @@ export default function SearchBox() {
   };
 
   let getWeatherInfo = async () => {
-    let response = await fetch(
-      `${import.meta.env.VITE_WEATHER_API}?q=${location}&appid=${
-        import.meta.env.VITE_API_KEY
-      }&units=metric`
-    );
+    let url = `/api/fetchData?city=${location}`;
+    let response = await fetch(url);
     let jsonResponse = await response.json();
     console.log(jsonResponse);
     return {
